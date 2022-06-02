@@ -1,0 +1,268 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+body{
+	background-color: black;
+}
+
+.header{
+	position: fixed;
+	margin-top:0px;
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin-left: 10px;
+	border:3px solid black;
+ 	border-radius: 80%;
+	background-color: yellow;
+	overflow: hidden;
+	font-size: 0px;
+	margin-top: 10px;
+
+
+}
+
+.header:hover{
+	margin-top: 0px;
+	margin-left: 0;
+	border-radius: 0;
+	border-top-right-radius: 0;
+	opacity: 100%;
+	display: block;
+	width: 100%;
+	height: 80px;
+	border: 2px,outset;
+	background-color: whitesmoke;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	transition-duration: 0.5s;
+	font-size: 25px;
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	text-decoration: underline,;
+	text-decoration-style: wavy;
+
+
+}
+.header a:hover{
+	font-weight: bold;
+	text-decoration: underline;
+	text-decoration-style: solid ;
+	text-decoration-color: black;
+	text-decoration-line: 3px;
+}
+
+.navigation{
+	margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+.navigation li{
+	display: inline;
+	margin-right: 20px;
+}
+
+
+
+.arrow-1 {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 30px auto 80px auto;
+}
+.arrow-1:before,
+.arrow-1:after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-left: 15px solid yellow;
+    border-bottom: 15px solid yellow;
+    animation: arrow-1 3s linear infinite;
+}
+.arrow-1:after {
+    animation: arrow-1 3s linear infinite -1.5s;
+}
+@keyframes arrow-1 {
+    0% {
+        opacity: 0;
+        transform: translate(0, -53px) rotate(-45deg);
+    }
+    10%, 90% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;  
+        transform: translate(0, 0) rotate(-45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 53px) rotate(-45deg);
+    }
+}
+
+img{
+	padding-top: 20px;
+	width: 600px;
+	height: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+p{
+	padding-top: 80px;
+	font-family: 'Bebas Neue', cursive;
+	margin-top: 60px;
+	font-size: 25px;
+	color: white;
+	width: 800px;
+	padding-left: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 150px;
+	
+
+}
+p span{
+	text-align: center;
+	font-size: 30px;
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+
+.arrow-2 {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: 85%;
+    margin-top: -150px;
+
+}
+.arrow-2:before,
+.arrow-2:after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-left: 15px solid yellow;
+    border-bottom: 15px solid yellow;
+    animation: arrow-2 3s linear infinite;
+}
+.arrow-2:after {
+    animation: arrow-2 3s linear infinite -1.5s;
+}
+@keyframes arrow-2 {
+    0% {
+        opacity: 0;
+        transform: translate(0, -53px) rotate(-45deg);
+    }
+    10%, 90% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;  
+        transform: translate(0, 0) rotate(-45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 53px) rotate(-45deg);
+    }
+}
+
+
+
+.projects{
+	flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+	width:900px;
+	height: 300px;
+	display: flex;
+	margin-top: 300px;
+	margin-left: 100px;
+	
+
+}
+.projects img{
+	margin-right: 0px;
+	border: 2px,solid,white;
+	width: 400px;
+	height: 250px;
+	flex: 0 0 auto;
+	display: inline-flex;
+
+}
+
+.projects p{
+	margin-right: 100px;
+	margin-left: -40px;
+	margin-top: -60px;
+	 flex: 0 0 auto;
+	
+	display: inline-flex;
+	justify-content: center;
+	width: 600px;
+	height: 300px;
+}
+
+.arrow-3 {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: 85%;
+    margin-top: -50px;
+
+}
+.arrow-3:before,
+.arrow-3:after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-left: 15px solid yellow;
+    border-bottom: 15px solid yellow;
+    animation: arrow-3 3s linear infinite;
+}
+.arrow-3:after {
+    animation: arrow-3 3s linear infinite -1.5s;
+}
+@keyframes arrow-3 {
+    0% {
+        opacity: 0;
+        transform: translate(0, -53px) rotate(-45deg);
+    }
+    10%, 90% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;  
+        transform: translate(0, 0) rotate(-45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 53px) rotate(-45deg);
+    }
+}
+.services{
+	display: flex;
+	height: 600px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 300px;
+}
+.services p{
+	font-size: 30px;
+	display: inline-flex;
+	margin-right: 30px;
+}
