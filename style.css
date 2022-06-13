@@ -2,154 +2,106 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
-
-    --bg-color: #111222;
-    --bg-color-highlight: #222222;
-    --text-color: whitesmoke;
-    --link-color: darkseagreen;
-}
-
-/* HTML */
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* BODY */
-
-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background: var(--bg-color);
-    color: var(--text-color);
-    /* overflow: hidden; */
-}
-
-/* NAVIGATION BAR */
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    height: 100%;
-    width: 15%;
-}
-
-.navbar-list {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-left: 25%;
-}
-
-/* LINKS */
-
-.navbar a {
     text-decoration: none;
-    color: var(--link-color);
+}
+html{
+    position: fixed;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    background-image:url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 1200px 700px;
+}
+.logo{
+    justify-content: center;
+    margin-top: 260px;
+    display:flex;
+    font-size: 100px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 120px;
+}
+.logo .mal{
+    display: inline;
+}
+.logo .sta{
+    display: inline;
+}
+.logo .pro{
+    display: inline;
 }
 
-#cr {
-    width: 10%;
-    height: 100%;
-    color: #555555;
-    /* margin-left: -10%; */
-    white-space: nowrap;
-    transform: translateX(-20%) translateY(-50%) rotate(-90deg);
+.menu{
+    position: fixed;
+    display: block;
+    left: 530px;
+    margin-bottom: 100px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255, 245, 58);
+    color:rgb(23, 23, 23);
+    user-select: none;
+    padding: 3px;
+    outline: none;
+    font-size: 25px;
+    font-weight: 900;
+   
+}
+.back{
+    display: none;
+    top: 550px;
+    position: fixed;
+    left: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255, 245, 58);
+    color: rgb(23, 23, 23);
+    padding: 3px;
+    outline: none;
+    font-size: 25px;
+    font-weight: 900;
+    
+}
+.back:hover{
+    background-color:  rgb(176, 170, 65);
+    width: 230px;
+    height: 60px;
+}
+.back:active{
+    background-color: aliceblue;
+}
+.menu:hover{
+    background-color:  rgb(176, 170, 65);
+    width: 230px;
+    height: 60px;
+}
+.menu:active{
+    background-color: aliceblue;
 }
 
-/* SCROLLBAR */
-
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
+#ph{
+    width: 540px;
+    height: 400px;
+    margin-top: 50px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 6px,outset;
+    border-radius: 10% 10% 10% 10%;
 }
-  
-/* Track */
-::-webkit-scrollbar-track {
-    background: var(--bg-color);
-}
-  
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: var(--text-color);
-}
-  
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--link-color);
-}
+#Introduction_video{
+    padding-top: 120px;
+    padding-left: 500px;
 
-/* CONTENT */
-
-#Home #Introduction_video {
-    position: static;
-    height: 100%;
-    scroll-padding-top: -50 em;
+    color: white;
+    font-size: 20px;
 }
-
-section {
-    scroll-margin-top: 200px;
-}
-
-.content img {
-    width: 50%;
-}
-
-#ph {
-    width: 80%;
-}
-
-.content {
-    height: 100%;
-    width: 70%;
-    padding-right: 5%;
-}
-.content h1 {
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.content h3 {
-    padding-bottom: 3%;
-}
-
-/* PROJECT LIST */
-
-.project-list {
-    display: flex;
-    padding: 20px;
-    overflow-x: scroll;
-}
-
-.project:not(:last-child) { margin-right: 10px; }
-
-.project {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border: 3px solid var(--bg-color-highlight);
-    border-radius: 10px;
-    background-color: var(--bg-color-highlight);
-    padding: 3%;
-    flex-shrink: 0;
-    width: min-content;
-    -webkit-overflow-scrolling: touch;
-}
-
-.project-details {
-    width: 300px;
-}
-
-.project-image {
-    width: 20%;
-}
-
-.project-description {
-    padding-bottom: 3%;
+.about{
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: block;
+    
 }
